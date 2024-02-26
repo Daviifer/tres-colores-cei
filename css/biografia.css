@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100vh;
+	background-image: linear-gradient(to top, #999, #eee);
+	overflow: hidden;
+}
+a{
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+a:focus,
+a:active{
+	color: inherit;
+}
+header{
+	position: fixed;
+	margin: 1%;
+}
+span{
+	color: #0050a4;
+}
+header h1{
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #ef4135;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0 7px;
+}
+nav{
+	width: 25%;
+	position: fixed;
+	right: 0px;
+	top: 22px;
+}
+.navegacion li{
+	display: inline;
+	margin-right: 15%;
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 0.8em;
+	color: #000;
+}
+section{
+	height: 100%;
+	display: flex;
+}
+.cajas{
+	height: 100%;
+	width:35%;
+}
+
+.medio{
+	height: 100%;
+	width:25%;
+}
+article p{
+	font-family: Oswald;
+	font-size: 0.7em;	
+	font-weight: 400;
+	color: #000;
+	margin: 5% 0;
+}
+.contenido{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 30%;
+}
+img{
+	border: 4px solid #fff;
+	outline: 1px solid grey;
+}
+
+@media screen and (min-width: 1201px){
+	.medio{
+		width: 30%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	
+	header h1{
+		font-size: 2.8em;
+	}
+	nav{
+		width: 75%;
+		left: 15px;
+		top:100px;
+	}
+	.navegacion li{
+		font-size: 1.2em;
+	}
+	.medio{
+		width: 65%;
+		margin-top: 5%;
+	}
+	article p{
+		font-size: 1.2em;
+	}
+}
+@media screen and (max-width: 480px){
+	header{
+		margin: 2%;
+		margin-right: 25%;
+	}
+	header h1{
+		font-size: 2em;
+	}
+	.medio{
+		width: 80%;
+		margin-top: 300px;
+	}
+	article p{
+		font-size: 1em;
+	}
+	nav{
+		width: 80%;
+		left: 2.5%;
+		top: 17%;
+	}
+	.navegacion li{
+		font-size: 1.2em;
+		margin-right: 10%;
+	}
+}

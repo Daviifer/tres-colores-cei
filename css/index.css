@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.fondo{
+	height: 100vh;
+	display: flex;
+}
+.fotos{
+	height: 100%;
+	width: calc(100%/3);
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-right: 2%;
+	background-position: center;
+	transition: background-position-x 1s ease, box-shadow 1.5s ease, width 1s ease, text-shadow 1s;
+}
+.fotos:hover{
+	background-position-x: 90%;
+	box-shadow: -20px 0px 30px 10px rgba(0, 0, 0, 0.5);
+	width: calc(100%/3 + 410px);
+	text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.fotos:hover p {
+    transform: translateY(-50vh);
+}
+
+
+a{
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+a:focus,
+a:active{
+	color: inherit;
+}
+header{
+	position: fixed;
+	margin: 1%;
+}
+span{
+	color: #0050a4;
+}
+header h1{
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #ef4135;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0 7px;
+}
+header p{
+	font-family: Oswald;
+	font-weight: 400;
+	font-size: 0.7em;
+	text-decoration: underline;
+}
+p{
+	font-family: Oswald;
+	font-weight: 500;
+	font-size: 6em;
+	padding-bottom: 4%;
+	transition: transform 1s ease;
+}
+.uno{
+	background-image: url("../img/azul.jpg");
+	color: #0050a4;
+}
+.dos{
+	background-image: url("../img/blanco.jpg");
+	color: #fff;
+}
+.tres{	
+	background-image: url("../img/rojo.jpg");
+	color: #ef4135;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1025px){
+	
+	header h1{
+		font-size: 3em;
+	}
+	header p{
+		font-size: 2em;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.fotos{
+		width: 100%;
+		padding-right: 0;
+	}
+	p{
+		margin-right: 5%;
+		font-size: 7em;
+	}
+	.uno{
+		background-position-y: 10%;
+	}
+	.tres{
+		background-position-y: 21%;
+	}
+}
+@media screen and (max-width: 480px){
+	header h1{
+		font-size: 1.5em;
+	}
+	header p{
+		font-size: 1em;
+	}
+	section{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.fotos{
+		width: 100%;
+		padding-right: 0;
+	}
+	p{
+		margin-right: 5%;
+		font-size: 3em;
+	}
+	.uno{
+		background-position-y: 10%;
+	}
+	.tres{
+		background-position-y: 21%;
+	}
+}
